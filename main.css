@@ -77,7 +77,7 @@ header nav ul li {
 
 .left {
     display: inline-block;
-    width: 71%;
+    width: 70.69%;
     max-height: 80%;
     text-align: center;
     vertical-align: top;
@@ -108,7 +108,7 @@ main section {
 .foot {
     display: flex;
     flex-direction: column;      
-    justify-content: center;     
+    justify-content: center;    
     align-items: center;         
     background-color: black;
     height: 120px;
@@ -120,10 +120,10 @@ main section {
     margin-bottom: 8px;          
 }
 
-.foot a {
+/* .foot a { */
     /* display: inline-block; */
     /* margin: 0 10px; */
-}
+/* } */
 
 /* .foot a:last-of-type::after { */
     /* content: "";
@@ -262,7 +262,7 @@ footer p {
 .home-flex {
     display: flex;
     margin: 30px;
-    border: solid red 1px;
+    /* border: solid red 1px; */
     /* width: 500px; */
 }
 
@@ -272,8 +272,9 @@ footer p {
     flex-direction: column;
     gap: 20px;
     color: black;
-    border: solid purple 1px;
+    /* border: solid purple 1px; */
     margin: 30px;
+    padding-bottom: 280px;
 }
 
 .nav-flex a {
@@ -282,13 +283,16 @@ footer p {
 
 .gallery-flex {
     display: flex;
-    border: solid aquamarine 3px;
-    gap: 90px;
-    margin: 50px;
+    /* border: solid aquamarine 3px; */
+    /* gap: 90px; */
+    width: 100%;
+    margin-bottom: 200px;
+    margin: 10px 0px 200px 0px;
     flex-direction: column;
 }
 
 .img-gallery{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 169px;
+    gap: 30px;
 }
