@@ -1,41 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="main.css"/>
-        <title>Home - Nav Example</title>
-    </head>
-    <body>
-        <header>
-            <nav aria-label="Page navigation">
-                <a href="#">
-                    <img src="./assets/img/f1logo.png"/>
-                </a>
-                <span></span>
-                <ul>
-                    <li><a href="#" class="navlink" id="current">Home</a></li>
-                    <li><a href="./pages/about.html" class="navlink">About</a></li>
-                    <li><a href="./pages/services.html" class="navlink">Services</a></li>
-                    <li><a href="./pages/contact.html" class="navlink">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="left">
-            <h1 style="text-align:center;">Home Page</h1>
-            </section>
-            <section class="right">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" />
+    <title>Home - Nav Example</title>
+</head>
+
+<body>
+    <a id="top"></a>
+    <header>
+        <nav aria-label="Page navigation">
+            <a href="#">
+                <img src="./assets/img/f1logo.png" />
+            </a>
+            <!-- <span></span> -->
+            <ul>
+                <li><a href="#" class="navlink" id="current">Home</a></li>
+                <li><a href="./pages/about.html" class="navlink">About</a></li>
+                <li><a href="./pages/services.html" class="navlink">Services</a></li>
+                <li><a href="./pages/contact.html" class="navlink">Contact</a></li>
+                <li><a href="./pages/verstappen.html" class="navlink verham">Verstappen</a></li>
+                <li><a href="./pages/hamilton.html" class="navlink verham">Hamilton</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- <section class="left"> -->
+        <!-- <h1 style="text-align:center;">Home Page</h1> -->
+        <!-- </section> -->
+        <!-- <section class="right">
                 <h2>News</h2>
-            </section>
-        </main>
-        <footer class="foot">
+            </section> -->
+
+        <div class="home-flex">
+            <div class="nav-flex">
+                <a href="">Verstappen</a><a href="">Hamilton</a><a href="">Alonso</a><a href=""></a>Senna<a href="">Vettel</a><a href="">Schumach   er</a>
+            </div>
+        </div>
+
+        <a href="#top" class="backtotop">
+            <img src="./assets/img/back-to-top-button1.png">
+        </a>
+    </main>
+    <footer class="foot" style="margin-top: 550px;">
+        <div class="foot-links">
             <a href="#" class="ho">FAQ</a>
             <a href="#">Terms</a>
             <a href="#">Privacy</a>
             <a href="#">Cookies</a>
-            <p>2025&copy; All Rights Reserved</p>
-        </footer>
-        
-    </body>
+        </div>
+        <p>2025&copy; All Rights Reserved</p>
+    </footer>
+
+</body>
+
 </html>

@@ -1,5 +1,5 @@
 * {
-    box-sizing:border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -13,65 +13,53 @@ header {
 }
 
 nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     background-color: #2b2b2b;
     padding: 8px 16px;
     border-radius: 16px;
     width: 100%;
-    white-space: nowrap;
-    overflow-x: auto;
+    /* white-space: nowrap; */
+    /* overflow-x: auto; */
 }
 
 /*  Nav Logo Anchor (nav > a) */
-header nav > a {
-    display: inline-block;
-    vertical-align: bottom;
+header nav>a {
+    /* display: inline-block; */
+    /* vertical-align: bottom; */
     background-color: white;
 }
 
-header nav > a img {
+header nav>a img {
     width: 32px;
     height: auto;
-    /* background-color: cyan; */
 }
 
-/* Spacer span */
-header nav > span {
-    display: inline-block; 
-    width: 60%; 
-    min-width: 16px;
-    max-width: 100%;
-    /* border: solid 1px red; */
-}
 
 /* Nav Menu (nav > ul) */
 header nav ul,
 header nav ul li {
-    display: inline-block;
-    margin-bottom: 8px;
-}
-
-/* Spacer span */
-header nav > span {
-    display: inline-block;
-    /* border: solid 1px red; */
-    /* Parent width - Logo widht - Menu <ul> widht - span border - whitespaces */
-    width: calc(100% - 45px - 256px -2px - 16px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
 }
 
 header nav ul li {
-    display: inline-block;
-    margin-right: 20px;
+    /* display: inline-block; */
+    /* margin-right: 20px; */
 }
 
-header nav ul li:last-child{
+/* header nav ul li:last-child{
     margin-right: 0px;
-}
-
-header nav ul li a 
+} */
 
 /* Nav Links (nav > ul > li > a) */
-.navlink:link, 
-.navlink:visited{
+.navlink:link,
+.navlink:visited {
     color: white;
 }
 
@@ -87,7 +75,7 @@ header nav ul li a
     color: rgb(92, 229, 0);
 }
 
-.left{
+.left {
     display: inline-block;
     width: 71%;
     max-height: 80%;
@@ -95,7 +83,7 @@ header nav ul li a
     vertical-align: top;
 }
 
-.right{
+.right {
     display: inline-block;
     height: 550px;
     width: 29%;
@@ -103,55 +91,63 @@ header nav ul li a
     vertical-align: top;
 }
 
-.right h2{
+.right h2 {
     text-align: center;
 }
 
 main {
     width: 100%;
-    font-size: 0;
+    /* margin-bottom: 550px; */
+    /* font-size: 0; */
 }
 
 main section {
     font-size: 16px;
 }
 
-.foot{
+.foot {
+    display: flex;
+    flex-direction: column;      
+    justify-content: center;     
+    align-items: center;         
     background-color: black;
     height: 120px;
-    text-align: center;
-    line-height: 80px;
+}
 
+.foot-links {
+    display: flex;
+    gap: 16px;                   
+    margin-bottom: 8px;          
 }
 
 .foot a {
-    display: inline-block;
-    margin: 0 10px;
+    /* display: inline-block; */
+    /* margin: 0 10px; */
 }
 
-.foot a:last-of-type::after {
-    content: "";
+/* .foot a:last-of-type::after { */
+    /* content: "";
     display: block;
     height: 0;
-}
+} */
 
-.foot p {
+/* .foot p {
     display: block;
     margin-top: 10px;
     line-height: normal;
-}
+} */
 
 footer a {
-    display: inline-block;
+    /* display: inline-block; */
     text-align: center;
-    align-items: center;
+    /* align-items: center;  */
     padding-left: 10px;
     padding-right: 10px;
     color: aquamarine;
 }
 
-footer p{
-    display: inline-block;
+footer p {
+    /* display: inline-block; */
     text-align: 60%;
     align-items: 60%;
     padding-left: 10px;
@@ -166,16 +162,19 @@ footer p{
     border-radius: 0;
     text-align: center;
 }
+
 .side-nav ul {
     padding: 0;
     margin: 0;
 }
+
 .side-nav li {
     list-style: none;
     margin: 0;
 }
+
 .side-nav a {
-    display: block;
+    /* display: block; */
     color: black;
     padding: 6px 0;
     text-decoration: none;
@@ -183,12 +182,80 @@ footer p{
     background: none;
     text-align: center;
 }
+
 .side-nav a:hover {
     color: aquamarine;
     background: none;
 }
+
 .side-nav li:last-child a {
     border-bottom: none;
 }
 
+/* Sticky Position (About Page) */
+
+.sticky{
+    position: sticky;
+    top: 20px;
+    background-color: white;
+    padding: 16px;
+    z-index: 10;
+    max-width: 300px;
+}
+
+/* Back To Top Button */
+
+.backtotop {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 100;
+    background: white;
+    border: none;
+    padding: 0;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+}
+
+.backtotop:hover {
+    background: grey;
+    border-radius: 50%;
+}
+
+/* Contact page */
+
+ 
+/* .contact-image1{ */
+    /* float: left; */
+    /* padding: 10px; */
+/* } */
+
+/* .contact-image2{
+    /* float: right; */
+    /* padding: 10px; */
+/* }  */
+
+/* .contact-paragraph{
+    padding: 40px;
+    clear: both;
+} */
+
+#flex-layout-contact{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+
+.contact-images {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.contact-paragraph {
+    padding: 50px;
+}
+
+/* Home Flex Gallery */
 
