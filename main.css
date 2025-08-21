@@ -1,0 +1,194 @@
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 10px 10px 10px 10px;
+    background-color: black;
+}
+
+nav {
+    background-color: #2b2b2b;
+    padding: 8px 16px;
+    border-radius: 16px;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+/*  Nav Logo Anchor (nav > a) */
+header nav > a {
+    display: inline-block;
+    vertical-align: bottom;
+    background-color: white;
+}
+
+header nav > a img {
+    width: 32px;
+    height: auto;
+    /* background-color: cyan; */
+}
+
+/* Spacer span */
+header nav > span {
+    display: inline-block; 
+    width: 60%; 
+    min-width: 16px;
+    max-width: 100%;
+    /* border: solid 1px red; */
+}
+
+/* Nav Menu (nav > ul) */
+header nav ul,
+header nav ul li {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+/* Spacer span */
+header nav > span {
+    display: inline-block;
+    /* border: solid 1px red; */
+    /* Parent width - Logo widht - Menu <ul> widht - span border - whitespaces */
+    width: calc(100% - 45px - 256px -2px - 16px);
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul li:last-child{
+    margin-right: 0px;
+}
+
+header nav ul li a 
+
+/* Nav Links (nav > ul > li > a) */
+.navlink:link, 
+.navlink:visited{
+    color: white;
+}
+
+.navlink[href="#"] {
+    color: aquamarine;
+}
+
+.navlink:hover {
+    color: rgb(229, 145, 0);
+}
+
+.navlink:active {
+    color: rgb(92, 229, 0);
+}
+
+.left{
+    display: inline-block;
+    width: 71%;
+    max-height: 80%;
+    text-align: center;
+    vertical-align: top;
+}
+
+.right{
+    display: inline-block;
+    height: 550px;
+    width: 29%;
+    background-color: darkgrey;
+    vertical-align: top;
+}
+
+.right h2{
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    font-size: 0;
+}
+
+main section {
+    font-size: 16px;
+}
+
+.foot{
+    background-color: black;
+    height: 120px;
+    text-align: center;
+    line-height: 80px;
+
+}
+
+.foot a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.foot a:last-of-type::after {
+    content: "";
+    display: block;
+    height: 0;
+}
+
+.foot p {
+    display: block;
+    margin-top: 10px;
+    line-height: normal;
+}
+
+footer a {
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: aquamarine;
+}
+
+footer p{
+    display: inline-block;
+    text-align: 60%;
+    align-items: 60%;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+}
+
+.side-nav {
+    margin: 24px 0 24px 0;
+    padding: 0;
+    background: none;
+    border-radius: 0;
+    text-align: center;
+}
+.side-nav ul {
+    padding: 0;
+    margin: 0;
+}
+.side-nav li {
+    list-style: none;
+    margin: 0;
+}
+.side-nav a {
+    display: block;
+    color: black;
+    padding: 6px 0;
+    text-decoration: none;
+    border-bottom: none;
+    background: none;
+    text-align: center;
+}
+.side-nav a:hover {
+    color: aquamarine;
+    background: none;
+}
+.side-nav li:last-child a {
+    border-bottom: none;
+}
+
+
