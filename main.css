@@ -259,3 +259,36 @@ footer p {
 
 /* Home Flex Gallery */
 
+.home-flex {
+    display: flex;
+    margin: 30px;
+    border: solid red 1px;
+    /* width: 500px; */
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    color: black;
+    border: solid purple 1px;
+    margin: 30px;
+}
+
+.nav-flex a {
+    color: black;
+}
+
+.gallery-flex {
+    display: flex;
+    border: solid aquamarine 3px;
+    gap: 90px;
+    margin: 50px;
+    flex-direction: column;
+}
+
+.img-gallery{
+    width: 200px;
+    height: 200px;
+}
